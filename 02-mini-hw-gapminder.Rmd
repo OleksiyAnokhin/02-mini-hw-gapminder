@@ -1,0 +1,45 @@
+---
+title: "Mini HW 02 - Visualizing Gapminder data"
+author: "Mine Cetinkaya-Rundel"
+date: "Aug 31, 2017"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    keep_md: yes
+    theme: sandstone
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Load required packages:
+
+```{r Load packages, message=FALSE}
+library(readr)
+library(ggplot2)
+library(dplyr)
+```
+
+Load data:
+
+```{r Load data, message=FALSE}
+gap <- read_csv("https://stat.duke.edu/~mc301/data/gapminder.csv")
+```
+
+Subset the data for just one year, in this case 2007:
+
+```{r Subset data}
+gap_subset <- gap %>%
+  filter(year == 2007)
+```
+
+Visualize the relationship between `gdpPercap` and `lifeExp`, coloring the points by `continent`:
+
+```{r Scatterplot with color}
+ggplot(data = gap_subset, aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point()
+```
+
+Describe the relationship you see in the plot:
