@@ -36,7 +36,7 @@ ggplot(data = gap_subset, aes(x = gdpPercap, y = lifeExp, color = continent)) +
   geom_point()
 ```
 
-![](fig/Scatterplot-with-color-1.png)<!-- -->
+<img src="fig/Scatterplot-with-color-1.png" width="700" />
 
 
 ```r
@@ -44,6 +44,6 @@ ggplot(data = gap_subset, aes(x = gdpPercap, y = lifeExp)) +
   geom_point()
 ```
 
-![](fig/Scatterplot without color-1.png)<!-- -->
+<img src="fig/Scatterplot without color-1.png" width="700" />
 
 Describe the relationship you see in the plot:

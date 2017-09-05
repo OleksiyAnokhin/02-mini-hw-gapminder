@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, fig.path = 'fig/', dev = 'png', dpi = 100)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, fig.path = 'fig/', dev = 'png', dpi = 100, fig.retina = 2)
 ```
 
 Load required packages:
