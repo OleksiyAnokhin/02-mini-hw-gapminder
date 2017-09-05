@@ -37,7 +37,7 @@ gap_subset <- gap %>%
 
 Visualize the relationship between `gdpPercap` and `lifeExp`, coloring the points by `continent`:
 
-```{r Scatterplot with color}
+```{r Scatterplot-with-color}
 ggplot(data = gap_subset, aes(x = gdpPercap, y = lifeExp, color = continent)) +
   geom_point()
 ```
